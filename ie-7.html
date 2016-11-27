@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        .color {
+            background-color: #CC00FF;
+            /*所有浏览器都会显示为紫色*/
+            background-color: #FF0000\9;
+            /*IE6、IE7、IE8会显示红色*/
+            *background-color: #0066FF;
+            /*IE6、IE7会变为蓝色*/
+            _background-color: #009933;
+            /*IE6会变为绿色*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="color">IE6 mode</h1>
+    <p>IE6 支持下划线，IE7不支持下划线，所以在 IE6 下显示为绿色。<p>
+    <p>IE7 不支持下划线，支持 *。所以在 IE7 下显示为蓝色。</p>
+    <p>IE8 不能识别 “*” 和 “_”，支持 \9，显示为红色</p>
+    <p>标准浏览器显示为紫色</p>
+</body>
+
+</html>

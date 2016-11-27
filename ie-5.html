@@ -1,0 +1,33 @@
+﻿<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Quirks mode</h1>
+    <p>
+        在Standards模式下，给span等行内元素设置wdith和height都不会生效，而在quirks模式下，则会生效</p>
+    <p>
+        <span style="background-color:green; height: 200px;">Setup height at inline element</span>
+    </p>
+    <h2>盒模型的高宽包含内补丁和边框</h2>
+    <p>
+        在W3C标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在Quirks模式下，IE的宽度和高度还包含了padding和border。IE5.5及以下的浏览器即使在Standards模式下，也会有这个问题 可以设置行内元素的高宽
+    </p>
+
+    <h2>可设置百分比的高度</h2>
+    <p>
+        在standards模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置百分比的高度，子元素设置一个百分比的高度是无效的</p>
+    <h2>用margin:0 auto设置水平居中在IE下会失效</h2>
+    <p>
+        使用margin:0 auto在standards模式下可以使元素水平居中，但在quirks模式下却会失效,quirk模式下的解决办法，用text-align属性: body{text-align:center};#{content:text-align:left}
+    </p>
+    <h2>设置图片的padding会失效</h2>
+    <h2>Table中的字体属性不能继承上层的设置</h2>
+    <h2>white-space: pre会失效</h2>
+    <h2>许多CSS默认样式将不同</h2>
+
+</body>
+
+</html>
